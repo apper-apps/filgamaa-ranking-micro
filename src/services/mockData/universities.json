@@ -144,6 +144,7 @@
     "overallRating": 7.8,
     "totalReviews": 743,
     "facultyCount": 13
+"facultyCount": 13
   },
   {
     "Id": 6,
@@ -172,5 +173,118 @@
     "overallRating": 7.6,
     "totalReviews": 528,
     "facultyCount": 16
+  },
+  {
+    "Id": 7,
+    "name": "German University in Cairo",
+    "nameAr": "الجامعة الألمانية بالقاهرة",
+    "images": [
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=400&fit=crop"
+    ],
+    "description": "The German University in Cairo (GUC) is a private university that follows the German education system. Established in 2002, it offers German-accredited programs and promotes German-Egyptian academic cooperation.",
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4569,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 2 27589990",
+      "email": "info@guc.edu.eg",
+      "website": "https://guc.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/GUCEgypt",
+      "twitter": "https://twitter.com/GUC_Egypt",
+      "linkedin": "https://linkedin.com/school/german-university-cairo"
+    },
+    "yearEstablished": 2002,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 8.8,
+    "totalReviews": 423,
+    "facultyCount": 7
+  },
+  {
+    "Id": 8,
+    "name": "Suez Canal University",
+    "nameAr": "جامعة قناة السويس",
+    "images": [
+      "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&h=400&fit=crop"
+    ],
+    "description": "Suez Canal University is a public university located in Ismailia, Egypt. Founded in 1976, it serves the Suez Canal region and has become a significant educational institution in eastern Egypt.",
+    "location": {
+      "lat": 30.5965,
+      "lng": 32.2715,
+      "address": "Ismailia, Ismailia Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 64 3230613",
+      "email": "info@suez.edu.eg",
+      "website": "https://suez.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/suezcanal.university"
+    },
+    "yearEstablished": 1976,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 7.9,
+    "totalReviews": 612,
+    "facultyCount": 12
+  },
+  {
+    "Id": 9,
+    "name": "Helwan University",
+    "nameAr": "جامعة حلوان",
+    "images": [
+      "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=400&fit=crop"
+    ],
+    "description": "Helwan University is a public university located in Helwan, Cairo. Established in 1975, it is known for its engineering, applied arts, and music programs, and has a strong focus on practical education.",
+    "location": {
+      "lat": 29.8500,
+      "lng": 31.3353,
+      "address": "Helwan, Cairo Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 2 25559492",
+      "email": "info@helwan.edu.eg",
+      "website": "https://helwan.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/helwan.university"
+    },
+    "yearEstablished": 1975,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 7.7,
+    "totalReviews": 834,
+    "facultyCount": 14
+  },
+  {
+    "Id": 10,
+    "name": "Zagazig University",
+    "nameAr": "جامعة الزقازيق",
+    "images": [
+      "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&h=400&fit=crop"
+    ],
+    "description": "Zagazig University is a public university located in Zagazig, Sharqia Governorate. Founded in 1974, it serves the eastern delta region and is particularly known for its medical, veterinary, and agricultural programs.",
+    "location": {
+      "lat": 30.5877,
+      "lng": 31.5022,
+      "address": "Zagazig, Sharqia Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 55 2303266",
+      "email": "info@zu.edu.eg",
+      "website": "https://zu.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/zagazig.university"
+    },
+    "yearEstablished": 1974,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 7.5,
+    "totalReviews": 691,
+    "facultyCount": 17
   }
-]

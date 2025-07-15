@@ -328,5 +328,331 @@
     },
     "overallRating": 8.1,
     "totalReviews": 165
+},
+  {
+    "Id": 11,
+    "universityId": 7,
+    "name": "Faculty of Engineering",
+    "nameAr": "كلية الهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Engineering at German University in Cairo offers German-accredited engineering programs with strong industry connections and emphasis on practical training and research.",
+    "yearCommenced": 2002,
+    "annualFeesEGP": 165000,
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4569,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Computer Science and Engineering",
+      "Mechanical Engineering",
+      "Information Engineering",
+      "Media Engineering and Technology",
+      "Management Technology"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 92.5,
+      "equivalent": 93.5,
+      "foreign": 91.5
+    },
+    "overallRating": 8.9,
+    "totalReviews": 112
+  },
+  {
+    "Id": 12,
+    "universityId": 7,
+    "name": "Faculty of Management Technology",
+    "nameAr": "كلية تكنولوجيا الإدارة",
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Management Technology at GUC combines business administration with technology, offering German-accredited programs that prepare students for leadership roles in technology-driven industries.",
+    "yearCommenced": 2005,
+    "annualFeesEGP": 160000,
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4569,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Business Administration",
+      "International Business",
+      "Management Information Systems",
+      "Supply Chain Management"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 90.0,
+      "equivalent": 91.0,
+      "foreign": 89.0
+    },
+    "overallRating": 8.7,
+    "totalReviews": 89
+  },
+  {
+    "Id": 13,
+    "universityId": 8,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Suez Canal University is known for its innovative medical education and strong clinical training programs, serving the Suez Canal region with quality healthcare professionals.",
+    "yearCommenced": 1978,
+    "annualFeesEGP": 31000,
+    "location": {
+      "lat": 30.5965,
+      "lng": 32.2715,
+      "address": "Ismailia, Ismailia Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 93.8,
+      "equivalent": 94.5,
+      "foreign": 92.8
+    },
+    "overallRating": 8.3,
+    "totalReviews": 167
+  },
+  {
+    "Id": 14,
+    "universityId": 8,
+    "name": "Faculty of Dentistry",
+    "nameAr": "كلية طب الأسنان",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Dentistry at Suez Canal University provides comprehensive dental education with modern facilities and clinical training to prepare competent dental professionals.",
+    "yearCommenced": 1985,
+    "annualFeesEGP": 35000,
+    "location": {
+      "lat": 30.5965,
+      "lng": 32.2715,
+      "address": "Ismailia, Ismailia Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Dental Surgery (BDS)",
+      "Master of Dental Surgery",
+      "Doctor of Dental Surgery (DDS)",
+      "Diploma in Dental Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 91.5,
+      "equivalent": 92.5,
+      "foreign": 90.5
+    },
+    "overallRating": 8.1,
+    "totalReviews": 134
+  },
+  {
+    "Id": 15,
+    "universityId": 9,
+    "name": "Faculty of Applied Arts",
+    "nameAr": "كلية الفنون التطبيقية",
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Applied Arts at Helwan University is Egypt's premier institution for applied arts education, offering programs in design, decoration, and artistic expression with strong industry connections.",
+    "yearCommenced": 1975,
+    "annualFeesEGP": 22000,
+    "location": {
+      "lat": 29.8500,
+      "lng": 31.3353,
+      "address": "Helwan, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Graphic Design",
+      "Interior Design",
+      "Fashion Design",
+      "Product Design",
+      "Photography and Cinema"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 82.0,
+      "equivalent": 83.0,
+      "foreign": 81.0
+    },
+    "overallRating": 8.4,
+    "totalReviews": 201
+  },
+  {
+    "Id": 16,
+    "universityId": 9,
+    "name": "Faculty of Engineering",
+    "nameAr": "كلية الهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Engineering at Helwan University is known for its practical approach to engineering education and strong industry partnerships, particularly in automotive and manufacturing engineering.",
+    "yearCommenced": 1975,
+    "annualFeesEGP": 24000,
+    "location": {
+      "lat": 29.8500,
+      "lng": 31.3353,
+      "address": "Helwan, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Mechanical Engineering",
+      "Electrical Engineering",
+      "Civil Engineering",
+      "Computer Engineering",
+      "Automotive Engineering",
+      "Industrial Engineering"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 88.5,
+      "equivalent": 89.5,
+      "foreign": 87.5
+    },
+    "overallRating": 8.0,
+    "totalReviews": 189
+  },
+  {
+    "Id": 17,
+    "universityId": 10,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Zagazig University is a respected medical school in the eastern delta region, known for its comprehensive medical education and strong clinical training programs.",
+    "yearCommenced": 1978,
+    "annualFeesEGP": 30000,
+    "location": {
+      "lat": 30.5877,
+      "lng": 31.5022,
+      "address": "Zagazig, Sharqia Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 93.2,
+      "equivalent": 94.0,
+      "foreign": 92.2
+    },
+    "overallRating": 8.2,
+    "totalReviews": 156
+  },
+  {
+    "Id": 18,
+    "universityId": 10,
+    "name": "Faculty of Veterinary Medicine",
+    "nameAr": "كلية الطب البيطري",
+    "images": [
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Veterinary Medicine at Zagazig University is one of Egypt's leading veterinary schools, providing comprehensive education in animal health and veterinary sciences.",
+    "yearCommenced": 1975,
+    "annualFeesEGP": 26000,
+    "location": {
+      "lat": 30.5877,
+      "lng": 31.5022,
+      "address": "Zagazig, Sharqia Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Veterinary Medicine",
+      "Master of Veterinary Medicine",
+      "Doctor of Veterinary Medicine (DVM)",
+      "Diploma in Veterinary Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 89.0,
+      "equivalent": 90.0,
+      "foreign": 88.0
+    },
+    "overallRating": 8.3,
+    "totalReviews": 143
+  },
+  {
+    "Id": 19,
+    "universityId": 6,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Assiut University is a prestigious medical school in Upper Egypt, known for its strong academic programs and excellent clinical training in the university hospital.",
+    "yearCommenced": 1957,
+    "annualFeesEGP": 29000,
+    "location": {
+      "lat": 27.1809,
+      "lng": 31.1837,
+      "address": "Assiut, Assiut Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 92.8,
+      "equivalent": 93.8,
+      "foreign": 91.8
+    },
+    "overallRating": 8.1,
+    "totalReviews": 172
+  },
+  {
+    "Id": 20,
+    "universityId": 10,
+    "name": "Faculty of Agriculture",
+    "nameAr": "كلية الزراعة",
+    "images": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Agriculture at Zagazig University is a leading agricultural education institution in the fertile Nile Delta region, offering comprehensive programs in agricultural sciences and rural development.",
+    "yearCommenced": 1974,
+    "annualFeesEGP": 18000,
+    "location": {
+      "lat": 30.5877,
+      "lng": 31.5022,
+      "address": "Zagazig, Sharqia Governorate, Egypt"
+    },
+    "programs": [
+      "Agricultural Engineering",
+      "Crop Science",
+      "Animal Production",
+      "Soil Science",
+      "Agricultural Economics",
+      "Plant Protection"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 78.5,
+      "equivalent": 79.5,
+      "foreign": 77.5
+    },
+    "overallRating": 7.9,
+    "totalReviews": 124
   }
 ]
