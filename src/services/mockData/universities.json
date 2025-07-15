@@ -1,0 +1,176 @@
+[
+  {
+    "Id": 1,
+    "name": "Cairo University",
+    "nameAr": "جامعة القاهرة",
+    "images": [
+      "https://images.unsplash.com/photo-1564981797816-1043664bf78d?w=800&h=400&fit=crop",
+      "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&h=400&fit=crop"
+    ],
+    "description": "Cairo University is Egypt's premier modern university and one of the leading institutions of higher education in the Arab world. Founded in 1908, it has played a pivotal role in the development of modern Egypt and continues to be a center of academic excellence.",
+    "location": {
+      "lat": 30.0278,
+      "lng": 31.2119,
+      "address": "Giza, Cairo Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 2 35676105",
+      "email": "info@cu.edu.eg",
+      "website": "https://cu.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/cairo.university",
+      "twitter": "https://twitter.com/cairouniversity",
+      "linkedin": "https://linkedin.com/school/cairo-university"
+    },
+    "yearEstablished": 1908,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 8.5,
+    "totalReviews": 1247,
+    "facultyCount": 22
+  },
+  {
+    "Id": 2,
+    "name": "Alexandria University",
+    "nameAr": "جامعة الإسكندرية",
+    "images": [
+      "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?w=800&h=400&fit=crop"
+    ],
+    "description": "Alexandria University is a major public university in Alexandria, Egypt. Founded in 1938, it is the second-largest university in Egypt and has been at the forefront of educational and research excellence in the Mediterranean region.",
+    "location": {
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "address": "Alexandria, Alexandria Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 3 5921675",
+      "email": "info@alexu.edu.eg",
+      "website": "https://alexu.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/alexu.official",
+      "twitter": "https://twitter.com/AlexUOfficial"
+    },
+    "yearEstablished": 1938,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 8.2,
+    "totalReviews": 892,
+    "facultyCount": 18
+  },
+  {
+    "Id": 3,
+    "name": "Ain Shams University",
+    "nameAr": "جامعة عين شمس",
+    "images": [
+      "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?w=800&h=400&fit=crop"
+    ],
+    "description": "Ain Shams University is one of Egypt's largest and most prestigious universities, located in Cairo. Established in 1950, it has consistently ranked among the top universities in Egypt and the Arab world.",
+    "location": {
+      "lat": 30.0808,
+      "lng": 31.2814,
+      "address": "Abbasiya, Cairo, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 2 26829417",
+      "email": "info@asu.edu.eg",
+      "website": "https://asu.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/ainshams.university"
+    },
+    "yearEstablished": 1950,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 8.0,
+    "totalReviews": 1056,
+    "facultyCount": 15
+  },
+  {
+    "Id": 4,
+    "name": "American University in Cairo",
+    "nameAr": "الجامعة الأمريكية بالقاهرة",
+    "images": [
+      "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=800&h=400&fit=crop"
+    ],
+    "description": "The American University in Cairo (AUC) is a private American university located in New Cairo, Egypt. Founded in 1919, AUC provides a liberal arts education delivered entirely in English.",
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4992,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 2 26151000",
+      "email": "aucegypt@aucegypt.edu",
+      "website": "https://aucegypt.edu"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/aucegypt",
+      "twitter": "https://twitter.com/aucegypt",
+      "linkedin": "https://linkedin.com/school/american-university-in-cairo"
+    },
+    "yearEstablished": 1919,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 9.2,
+    "totalReviews": 654,
+    "facultyCount": 8
+  },
+  {
+    "Id": 5,
+    "name": "Mansoura University",
+    "nameAr": "جامعة المنصورة",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "Mansoura University is a public university in Mansoura, Egypt. Founded in 1962, it has grown to become one of the largest universities in Egypt with a strong reputation in medical and engineering education.",
+    "location": {
+      "lat": 31.0364,
+      "lng": 31.3803,
+      "address": "Mansoura, Dakahlia Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 50 2202271",
+      "email": "info@mans.edu.eg",
+      "website": "https://mans.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/mansoura.university"
+    },
+    "yearEstablished": 1962,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 7.8,
+    "totalReviews": 743,
+    "facultyCount": 13
+  },
+  {
+    "Id": 6,
+    "name": "Assiut University",
+    "nameAr": "جامعة أسيوط",
+    "images": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=400&fit=crop"
+    ],
+    "description": "Assiut University is a public university located in Assiut, Egypt. Established in 1957, it serves as a major educational center in Upper Egypt and has played a significant role in the development of the region.",
+    "location": {
+      "lat": 27.1809,
+      "lng": 31.1837,
+      "address": "Assiut, Assiut Governorate, Egypt"
+    },
+    "contactInfo": {
+      "phone": "+20 88 2412568",
+      "email": "info@aun.edu.eg",
+      "website": "https://aun.edu.eg"
+    },
+    "socialMedia": {
+      "facebook": "https://facebook.com/assiut.university"
+    },
+    "yearEstablished": 1957,
+    "accreditationStatus": true,
+    "verificationStatus": true,
+    "overallRating": 7.6,
+    "totalReviews": 528,
+    "facultyCount": 16
+  }
+]

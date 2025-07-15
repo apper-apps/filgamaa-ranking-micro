@@ -1,0 +1,332 @@
+[
+  {
+    "Id": 1,
+    "universityId": 1,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Cairo University is one of the oldest and most prestigious medical schools in Egypt and the Arab world. Established in 1827, it has trained generations of physicians and medical professionals.",
+    "yearCommenced": 1827,
+    "annualFeesEGP": 35000,
+    "location": {
+      "lat": 30.0278,
+      "lng": 31.2119,
+      "address": "Kasr Al-Ainy, Cairo, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 95.5,
+      "equivalent": 96.0,
+      "foreign": 94.0
+    },
+    "overallRating": 9.1,
+    "totalReviews": 324
+  },
+  {
+    "Id": 2,
+    "universityId": 1,
+    "name": "Faculty of Engineering",
+    "nameAr": "كلية الهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Engineering at Cairo University is one of the leading engineering schools in Egypt, offering diverse programs in various engineering disciplines with state-of-the-art facilities.",
+    "yearCommenced": 1816,
+    "annualFeesEGP": 28000,
+    "location": {
+      "lat": 30.0278,
+      "lng": 31.2119,
+      "address": "Giza, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Civil Engineering",
+      "Mechanical Engineering",
+      "Electrical Engineering",
+      "Computer Engineering",
+      "Chemical Engineering",
+      "Aerospace Engineering"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 92.0,
+      "equivalent": 93.0,
+      "foreign": 91.0
+    },
+    "overallRating": 8.7,
+    "totalReviews": 287
+  },
+  {
+    "Id": 3,
+    "universityId": 1,
+    "name": "Faculty of Economics and Political Science",
+    "nameAr": "كلية الاقتصاد والعلوم السياسية",
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Economics and Political Science at Cairo University is a leading institution for social sciences education in Egypt, offering programs in economics, political science, and statistics.",
+    "yearCommenced": 1913,
+    "annualFeesEGP": 18000,
+    "location": {
+      "lat": 30.0278,
+      "lng": 31.2119,
+      "address": "Giza, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Economics",
+      "Political Science",
+      "Statistics",
+      "Public Administration"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 85.0,
+      "equivalent": 86.0,
+      "foreign": 84.0
+    },
+    "overallRating": 8.2,
+    "totalReviews": 198
+  },
+  {
+    "Id": 4,
+    "universityId": 2,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Alexandria University is renowned for its high-quality medical education and research, serving the Mediterranean region with excellent healthcare professionals.",
+    "yearCommenced": 1942,
+    "annualFeesEGP": 33000,
+    "location": {
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "address": "Alexandria, Alexandria Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 94.8,
+      "equivalent": 95.5,
+      "foreign": 93.5
+    },
+    "overallRating": 8.9,
+    "totalReviews": 245
+  },
+  {
+    "Id": 5,
+    "universityId": 2,
+    "name": "Faculty of Engineering",
+    "nameAr": "كلية الهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Engineering at Alexandria University offers comprehensive engineering programs with a focus on practical applications and industry collaboration.",
+    "yearCommenced": 1941,
+    "annualFeesEGP": 26000,
+    "location": {
+      "lat": 31.2001,
+      "lng": 29.9187,
+      "address": "Alexandria, Alexandria Governorate, Egypt"
+    },
+    "programs": [
+      "Civil Engineering",
+      "Mechanical Engineering",
+      "Electrical Engineering",
+      "Computer Engineering",
+      "Chemical Engineering",
+      "Marine Engineering"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 90.5,
+      "equivalent": 91.5,
+      "foreign": 89.5
+    },
+    "overallRating": 8.4,
+    "totalReviews": 203
+  },
+  {
+    "Id": 6,
+    "universityId": 4,
+    "name": "School of Business",
+    "nameAr": "كلية إدارة الأعمال",
+    "images": [
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=400&fit=crop"
+    ],
+    "description": "The School of Business at AUC is a leading business school in the Middle East, offering world-class business education with American liberal arts foundation.",
+    "yearCommenced": 1960,
+    "annualFeesEGP": 180000,
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4992,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Business Administration",
+      "Master of Business Administration (MBA)",
+      "Master of Science in Finance",
+      "Master of Science in Management"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 95.0,
+      "equivalent": 96.0,
+      "foreign": 94.0
+    },
+    "overallRating": 9.3,
+    "totalReviews": 156
+  },
+  {
+    "Id": 7,
+    "universityId": 4,
+    "name": "School of Sciences and Engineering",
+    "nameAr": "كلية العلوم والهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=400&fit=crop"
+    ],
+    "description": "The School of Sciences and Engineering at AUC offers cutting-edge programs in engineering and sciences with emphasis on research and innovation.",
+    "yearCommenced": 1950,
+    "annualFeesEGP": 175000,
+    "location": {
+      "lat": 30.0131,
+      "lng": 31.4992,
+      "address": "New Cairo, Cairo Governorate, Egypt"
+    },
+    "programs": [
+      "Computer Science",
+      "Electrical Engineering",
+      "Mechanical Engineering",
+      "Computer Engineering",
+      "Construction Engineering",
+      "Physics",
+      "Chemistry",
+      "Mathematics"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 93.0,
+      "equivalent": 94.0,
+      "foreign": 92.0
+    },
+    "overallRating": 9.0,
+    "totalReviews": 134
+  },
+  {
+    "Id": 8,
+    "universityId": 3,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Ain Shams University is one of Egypt's premier medical schools, known for its excellence in medical education and research.",
+    "yearCommenced": 1947,
+    "annualFeesEGP": 34000,
+    "location": {
+      "lat": 30.0808,
+      "lng": 31.2814,
+      "address": "Abbasiya, Cairo, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 95.0,
+      "equivalent": 95.8,
+      "foreign": 93.8
+    },
+    "overallRating": 8.8,
+    "totalReviews": 291
+  },
+  {
+    "Id": 9,
+    "universityId": 5,
+    "name": "Faculty of Medicine",
+    "nameAr": "كلية الطب",
+    "images": [
+      "https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Medicine at Mansoura University is renowned for its innovative medical education and significant contributions to medical research in Egypt.",
+    "yearCommenced": 1962,
+    "annualFeesEGP": 32000,
+    "location": {
+      "lat": 31.0364,
+      "lng": 31.3803,
+      "address": "Mansoura, Dakahlia Governorate, Egypt"
+    },
+    "programs": [
+      "Bachelor of Medicine and Surgery (MBBS)",
+      "Master of Medicine",
+      "Doctor of Medicine (MD)",
+      "Diploma in Medical Sciences"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 94.2,
+      "equivalent": 95.0,
+      "foreign": 93.0
+    },
+    "overallRating": 8.6,
+    "totalReviews": 178
+  },
+  {
+    "Id": 10,
+    "universityId": 5,
+    "name": "Faculty of Engineering",
+    "nameAr": "كلية الهندسة",
+    "images": [
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&h=400&fit=crop"
+    ],
+    "description": "The Faculty of Engineering at Mansoura University offers comprehensive engineering programs with strong industry connections and practical training.",
+    "yearCommenced": 1973,
+    "annualFeesEGP": 25000,
+    "location": {
+      "lat": 31.0364,
+      "lng": 31.3803,
+      "address": "Mansoura, Dakahlia Governorate, Egypt"
+    },
+    "programs": [
+      "Civil Engineering",
+      "Mechanical Engineering",
+      "Electrical Engineering",
+      "Computer Engineering",
+      "Chemical Engineering",
+      "Architecture"
+    ],
+    "hasPostgraduate": true,
+    "naqaaeeAccreditation": true,
+    "acceptanceGrades": {
+      "thanaweya": 89.5,
+      "equivalent": 90.5,
+      "foreign": 88.5
+    },
+    "overallRating": 8.1,
+    "totalReviews": 165
+  }
+]

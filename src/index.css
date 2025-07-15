@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'react-toastify/dist/ReactToastify.css';
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-gray-900 font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-600 to-secondary-500 bg-clip-text text-transparent;
+  }
+  
+  .glass {
+    @apply backdrop-blur-glass bg-white/20 border border-white/20;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-card-hover hover:scale-[1.02];
+  }
+}
+
+/* Toast Customization */
+.Toastify__toast-container {
+  @apply text-sm font-medium;
+}
+
+.Toastify__toast {
+  @apply rounded-lg shadow-lg;
+  min-height: 64px;
+}
+
+.Toastify__toast--success {
+  @apply bg-success text-white;
+}
+
+.Toastify__toast--error {
+  @apply bg-error text-white;
+}
+
+.Toastify__toast--warning {
+  @apply bg-warning text-white;
+}
+
+.Toastify__toast--info {
+  @apply bg-info text-white;
+}
+
+.Toastify__progress-bar {
+  @apply bg-white/30;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
