@@ -6,13 +6,32 @@ class FacultyService {
     this.initializeClient();
   }
 
-  initializeClient() {
+initializeClient() {
     if (typeof window !== 'undefined' && window.ApperSDK) {
       const { ApperClient } = window.ApperSDK;
-      this.apperClient = new ApperClient({
-        apperProjectId: import.meta.env.VITE_APPER_PROJECT_ID,
-        apperPublicKey: import.meta.env.VITE_APPER_PUBLIC_KEY
-      });
+      
+      // Validate environment variables
+      const projectId = import.meta.env.VITE_APPER_PROJECT_ID;
+      const publicKey = import.meta.env.VITE_APPER_PUBLIC_KEY;
+      
+      if (!projectId || !publicKey) {
+        console.error('FacultyService: Missing required environment variables');
+        if (!projectId) console.error('VITE_APPER_PROJECT_ID is undefined');
+        if (!publicKey) console.error('VITE_APPER_PUBLIC_KEY is undefined');
+        return;
+      }
+      
+      try {
+        this.apperClient = new ApperClient({
+          apperProjectId: projectId,
+          apperPublicKey: publicKey
+        });
+      } catch (error) {
+        console.error('FacultyService: Failed to initialize ApperClient:', error);
+        this.apperClient = null;
+      }
+    } else {
+      console.warn('FacultyService: ApperSDK not available or not in browser environment');
     }
   }
 
