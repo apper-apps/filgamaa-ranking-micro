@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback, useEffect } from "react";
 import { cn } from "@/utils/cn";
 import ApperIcon from "@/components/ApperIcon";
 
@@ -9,11 +9,40 @@ const Select = React.forwardRef(({
   helperText,
   options = [],
   placeholder = "Select option...",
+  value,
+  onChange,
   ...props 
 }, ref) => {
   const baseClasses = "w-full px-4 py-3 rounded-lg border border-gray-300 bg-white text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all duration-200 appearance-none";
   
   const errorClasses = error ? "border-error focus:ring-error" : "";
+  
+  // Defensive programming: Ensure options is always an array
+  const safeOptions = Array.isArray(options) ? options : [];
+  
+  // Safe change handler with null checks
+  const handleChange = useCallback((e) => {
+    try {
+      if (e && e.target && typeof e.target.value !== 'undefined') {
+        if (onChange && typeof onChange === 'function') {
+          onChange(e);
+        }
+      }
+    } catch (error) {
+      console.warn('Select onChange error:', error);
+    }
+  }, [onChange]);
+  
+  // Ensure ref is properly handled
+  const safeRef = useCallback((node) => {
+    if (ref) {
+      if (typeof ref === 'function') {
+        ref(node);
+      } else if (ref && typeof ref === 'object') {
+        ref.current = node;
+      }
+    }
+  }, [ref]);
   
   return (
     <div className="w-full">
@@ -24,16 +53,25 @@ const Select = React.forwardRef(({
       )}
       <div className="relative">
         <select
-          ref={ref}
+          ref={safeRef}
           className={cn(baseClasses, errorClasses, className)}
+          value={value || ""}
+          onChange={handleChange}
           {...props}
         >
-          <option value="">{placeholder}</option>
-          {options.map((option) => (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          ))}
+          <option value="">{placeholder || "Select option..."}</option>
+          {safeOptions.map((option, index) => {
+            // Defensive programming: Handle various option formats
+            const optionValue = option?.value ?? option ?? "";
+            const optionLabel = option?.label ?? option?.name ?? option?.text ?? optionValue;
+            const optionKey = option?.key ?? option?.id ?? optionValue ?? index;
+            
+            return (
+              <option key={optionKey} value={optionValue}>
+                {optionLabel}
+              </option>
+            );
+          })}
         </select>
         <ApperIcon 
           name="ChevronDown" 
