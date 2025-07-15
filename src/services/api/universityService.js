@@ -1,11 +1,11 @@
 import { toast } from "react-toastify";
+import React from "react";
 
 class UniversityService {
   constructor() {
     this.apperClient = null;
     this.initializeClient();
   }
-
   initializeClient() {
     if (typeof window !== 'undefined' && window.ApperSDK) {
       const { ApperClient } = window.ApperSDK;
