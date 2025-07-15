@@ -42,7 +42,8 @@ export default {
           700: '#1D8047',
           800: '#155A32',
           900: '#0D331D'
-        },
+},
+        border: '#E5E7EB',
         surface: '#F8F9FA',
         background: '#FFFFFF',
         success: '#27AE60',
