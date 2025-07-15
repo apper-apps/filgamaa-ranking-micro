@@ -210,11 +210,11 @@ case "rating":
                 onClear={handleClearFilters}
               />
               
-              {showMap && (
+{showMap && (
                 <LocationMap
                   locations={filteredUniversities.map(uni => ({
                     ...uni.location,
-                    name: uni.name,
+                    name: uni.Name,
                     id: uni.Id
                   }))}
                   onLocationSelect={handleLocationSelect}
