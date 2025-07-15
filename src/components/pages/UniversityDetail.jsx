@@ -101,39 +101,39 @@ const UniversityDetail = () => {
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    {university.verificationStatus && (
-                      <Badge variant="success">
-                        <ApperIcon name="ShieldCheck" size={16} className="mr-1" />
-                        Verified
-                      </Badge>
-                    )}
-                    {university.accreditationStatus && (
-                      <Badge variant="primary">
-                        <ApperIcon name="Award" size={16} className="mr-1" />
-                        Accredited
-                      </Badge>
-                    )}
+{university.verification_status && (
+                    <Badge variant="success">
+                      <ApperIcon name="ShieldCheck" size={16} className="mr-1" />
+                      Verified
+                    </Badge>
+                  )}
+                  {university.accreditation_status && (
+                    <Badge variant="primary">
+                      <ApperIcon name="Award" size={16} className="mr-1" />
+                      Accredited
+                    </Badge>
+                  )}
                   </div>
                 </div>
                 
                 <div className="flex items-center gap-6 mb-6">
                   <div className="flex items-center gap-2">
-                    <StarRating
-                      rating={university.overallRating}
-                      readonly
-                      size="lg"
-                      showValue={false}
-                    />
-                    <span className="text-3xl font-bold text-gradient">
-                      {university.overallRating?.toFixed(1) || "N/A"}
-                    </span>
-                    <span className="text-gray-500">/10</span>
-                  </div>
-                  
-                  <div className="text-sm text-gray-600">
-                    Based on {university.totalReviews || 0} reviews
-                  </div>
+<StarRating
+                    rating={university.overall_rating}
+                    readonly
+                    size="lg"
+                    showValue={false}
+                  />
+                  <span className="text-3xl font-bold text-gradient">
+                    {university.overall_rating?.toFixed(1) || "N/A"}
+                  </span>
+                  <span className="text-gray-500">/10</span>
                 </div>
+                
+                <div className="text-sm text-gray-600">
+                  Based on {university.total_reviews || 0} reviews
+                </div>
+              </div>
                 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
                   <div className="flex items-center gap-3">
@@ -141,8 +141,8 @@ const UniversityDetail = () => {
                       <ApperIcon name="Calendar" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">Established</p>
-                      <p className="font-semibold">{university.yearEstablished}</p>
+<p className="text-sm text-gray-600">Established</p>
+                    <p className="font-semibold">{university.year_established}</p>
                     </div>
                   </div>
                   
@@ -255,23 +255,23 @@ const UniversityDetail = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
                   <div className="space-y-3">
-                    {university.contactInfo?.phone && (
+{university.contact_info?.phone && (
                       <div className="flex items-center gap-3">
                         <ApperIcon name="Phone" size={20} className="text-gray-600" />
-                        <span>{university.contactInfo.phone}</span>
+                        <span>{university.contact_info.phone}</span>
                       </div>
                     )}
-                    {university.contactInfo?.email && (
+                    {university.contact_info?.email && (
                       <div className="flex items-center gap-3">
                         <ApperIcon name="Mail" size={20} className="text-gray-600" />
-                        <span>{university.contactInfo.email}</span>
+                        <span>{university.contact_info.email}</span>
                       </div>
                     )}
-                    {university.contactInfo?.website && (
+                    {university.contact_info?.website && (
                       <div className="flex items-center gap-3">
                         <ApperIcon name="Globe" size={20} className="text-gray-600" />
                         <a 
-                          href={university.contactInfo.website} 
+                          href={university.contact_info.website} 
                           target="_blank" 
                           rel="noopener noreferrer"
                           className="text-primary-600 hover:text-primary-700"
@@ -285,10 +285,10 @@ const UniversityDetail = () => {
                 
                 <div>
                   <h3 className="text-lg font-semibold text-gray-900 mb-4">Social Media</h3>
-                  <div className="flex items-center gap-4">
-                    {university.socialMedia?.facebook && (
+<div className="flex items-center gap-4">
+                    {university.social_media?.facebook && (
                       <a
-                        href={university.socialMedia.facebook}
+                        href={university.social_media.facebook}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-600 hover:text-blue-700"
@@ -296,9 +296,9 @@ const UniversityDetail = () => {
                         <ApperIcon name="Facebook" size={24} />
                       </a>
                     )}
-                    {university.socialMedia?.twitter && (
+                    {university.social_media?.twitter && (
                       <a
-                        href={university.socialMedia.twitter}
+                        href={university.social_media.twitter}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-400 hover:text-blue-500"
@@ -306,9 +306,9 @@ const UniversityDetail = () => {
                         <ApperIcon name="Twitter" size={24} />
                       </a>
                     )}
-                    {university.socialMedia?.linkedin && (
+                    {university.social_media?.linkedin && (
                       <a
-                        href={university.socialMedia.linkedin}
+                        href={university.social_media.linkedin}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-blue-800 hover:text-blue-900"

@@ -50,8 +50,8 @@ const Universities = () => {
     
     // Search filter
     if (searchQuery) {
-      filtered = filtered.filter(uni =>
-        uni.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+filtered = filtered.filter(uni =>
+        uni.Name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         uni.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         uni.location?.address?.toLowerCase().includes(searchQuery.toLowerCase())
       );
@@ -65,33 +65,33 @@ const Universities = () => {
     }
     
     // Rating filter
-    if (filters.minRating) {
+if (filters.minRating) {
       filtered = filtered.filter(uni =>
-        uni.overallRating >= parseFloat(filters.minRating)
+        uni.overall_rating >= parseFloat(filters.minRating)
       );
     }
     
     // Accreditation filter
-    if (filters.accredited) {
-      filtered = filtered.filter(uni => uni.accreditationStatus);
+if (filters.accredited) {
+      filtered = filtered.filter(uni => uni.accreditation_status);
     }
     
     // Verification filter
-    if (filters.verified) {
-      filtered = filtered.filter(uni => uni.verificationStatus);
+if (filters.verified) {
+      filtered = filtered.filter(uni => uni.verification_status);
     }
     
     // Sorting
     if (filters.sortBy) {
       switch (filters.sortBy) {
-        case "rating":
-          filtered.sort((a, b) => b.overallRating - a.overallRating);
+case "rating":
+          filtered.sort((a, b) => b.overall_rating - a.overall_rating);
           break;
         case "name":
-          filtered.sort((a, b) => a.name.localeCompare(b.name));
+          filtered.sort((a, b) => a.Name.localeCompare(b.Name));
           break;
         case "year":
-          filtered.sort((a, b) => b.yearEstablished - a.yearEstablished);
+          filtered.sort((a, b) => b.year_established - a.year_established);
           break;
         default:
           break;

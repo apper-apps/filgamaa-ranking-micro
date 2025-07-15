@@ -54,9 +54,9 @@ const Faculties = () => {
     let filtered = [...faculties];
     
     // Search filter
-    if (searchQuery) {
+if (searchQuery) {
       filtered = filtered.filter(faculty =>
-        faculty.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        faculty.Name?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         faculty.description?.toLowerCase().includes(searchQuery.toLowerCase()) ||
         faculty.programs?.some(program => 
           program.toLowerCase().includes(searchQuery.toLowerCase())
@@ -65,56 +65,56 @@ const Faculties = () => {
     }
     
     // Rating filter
-    if (filters.minRating) {
+if (filters.minRating) {
       filtered = filtered.filter(faculty =>
-        faculty.overallRating >= parseFloat(filters.minRating)
+        faculty.overall_rating >= parseFloat(filters.minRating)
       );
     }
     
     // Fees filter
-    if (filters.maxFees) {
+if (filters.maxFees) {
       filtered = filtered.filter(faculty =>
-        faculty.annualFeesEGP <= parseFloat(filters.maxFees)
+        faculty.annual_fees_egp <= parseFloat(filters.maxFees)
       );
     }
     
     // Grade filters
-    if (filters.minGrade) {
+if (filters.minGrade) {
       filtered = filtered.filter(faculty =>
-        faculty.acceptanceGrades?.thanaweya >= parseFloat(filters.minGrade)
+        faculty.acceptance_grades?.thanaweya >= parseFloat(filters.minGrade)
       );
     }
     
-    if (filters.maxGrade) {
+if (filters.maxGrade) {
       filtered = filtered.filter(faculty =>
-        faculty.acceptanceGrades?.thanaweya <= parseFloat(filters.maxGrade)
+        faculty.acceptance_grades?.thanaweya <= parseFloat(filters.maxGrade)
       );
     }
     
     // Postgraduate filter
-    if (filters.hasPostgraduate) {
-      filtered = filtered.filter(faculty => faculty.hasPostgraduate);
+if (filters.hasPostgraduate) {
+      filtered = filtered.filter(faculty => faculty.has_postgraduate);
     }
     
     // Accreditation filter
-    if (filters.accredited) {
-      filtered = filtered.filter(faculty => faculty.naqaaeeAccreditation);
+if (filters.accredited) {
+      filtered = filtered.filter(faculty => faculty.naqaaee_accreditation);
     }
     
     // Sorting
     if (filters.sortBy) {
       switch (filters.sortBy) {
-        case "rating":
-          filtered.sort((a, b) => b.overallRating - a.overallRating);
+case "rating":
+          filtered.sort((a, b) => b.overall_rating - a.overall_rating);
           break;
         case "fees":
-          filtered.sort((a, b) => a.annualFeesEGP - b.annualFeesEGP);
+filtered.sort((a, b) => a.annual_fees_egp - b.annual_fees_egp);
           break;
         case "grades":
-          filtered.sort((a, b) => (a.acceptanceGrades?.thanaweya || 0) - (b.acceptanceGrades?.thanaweya || 0));
+filtered.sort((a, b) => (a.acceptance_grades?.thanaweya || 0) - (b.acceptance_grades?.thanaweya || 0));
           break;
         case "name":
-          filtered.sort((a, b) => a.name.localeCompare(b.name));
+filtered.sort((a, b) => a.Name.localeCompare(b.Name));
           break;
         default:
           break;
@@ -139,9 +139,9 @@ const Faculties = () => {
     setSearchParams({});
   };
   
-  const getFacultyUniversity = (facultyId) => {
+const getFacultyUniversity = (facultyId) => {
     const faculty = faculties.find(f => f.Id === facultyId);
-    return universities.find(u => u.Id === faculty?.universityId);
+    return universities.find(u => u.Id === faculty?.university_id);
   };
   
   if (isLoading) {

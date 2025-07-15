@@ -39,18 +39,18 @@ const Home = () => {
       ]);
       
       // Get top rated universities
-      const topUniversities = universities
-        .sort((a, b) => b.overallRating - a.overallRating)
+const topUniversities = universities
+        .sort((a, b) => b.overall_rating - a.overall_rating)
         .slice(0, 6);
       
       // Get top rated faculties
-      const topFaculties = faculties
-        .sort((a, b) => b.overallRating - a.overallRating)
+const topFaculties = faculties
+        .sort((a, b) => b.overall_rating - a.overall_rating)
         .slice(0, 6);
       
       // Get recent reviews
-      const recentReviews = reviews
-        .sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt))
+const recentReviews = reviews
+        .sort((a, b) => new Date(b.created_at) - new Date(a.created_at))
         .slice(0, 3);
       
       setFeaturedUniversities(topUniversities);

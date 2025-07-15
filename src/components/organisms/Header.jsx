@@ -1,14 +1,18 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
+import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import ApperIcon from "@/components/ApperIcon";
 import SearchBar from "@/components/molecules/SearchBar";
 import Button from "@/components/atoms/Button";
 import { cn } from "@/utils/cn";
+import { AuthContext } from "../../App";
 
 const Header = ({ onSearch }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const { logout } = useContext(AuthContext);
+  const { user, isAuthenticated } = useSelector((state) => state.user);
   
   const navigation = [
     { name: "Home", href: "/" },
@@ -19,6 +23,10 @@ const Header = ({ onSearch }) => {
   ];
   
   const isActive = (path) => location.pathname === path;
+  
+  const handleLogout = async () => {
+    await logout();
+  };
   
   return (
     <header className="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-200/50">
@@ -73,14 +81,31 @@ const Header = ({ onSearch }) => {
               />
             </div>
             
-            <Button
-              variant="outline"
-              size="sm"
-              className="hidden sm:flex"
-            >
-              <ApperIcon name="User" size={16} className="mr-2" />
-              Admin
-            </Button>
+            {isAuthenticated ? (
+              <div className="flex items-center gap-3">
+                <span className="hidden sm:block text-sm text-gray-700">
+                  Welcome, {user?.firstName || user?.name || "User"}
+                </span>
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleLogout}
+                  className="hidden sm:flex"
+                >
+                  <ApperIcon name="LogOut" size={16} className="mr-2" />
+                  Logout
+                </Button>
+              </div>
+            ) : (
+              <Button
+                variant="outline"
+                size="sm"
+                className="hidden sm:flex"
+              >
+                <ApperIcon name="User" size={16} className="mr-2" />
+                Admin
+              </Button>
+            )}
             
             {/* Mobile menu button */}
             <button
@@ -127,14 +152,26 @@ const Header = ({ onSearch }) => {
             ))}
             
             <div className="pt-4 border-t border-gray-200">
-              <Button
-                variant="outline"
-                size="sm"
-                className="w-full"
-              >
-                <ApperIcon name="User" size={16} className="mr-2" />
-                Admin Dashboard
-              </Button>
+              {isAuthenticated ? (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={handleLogout}
+                  className="w-full"
+                >
+                  <ApperIcon name="LogOut" size={16} className="mr-2" />
+                  Logout
+                </Button>
+              ) : (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="w-full"
+                >
+                  <ApperIcon name="User" size={16} className="mr-2" />
+                  Admin Dashboard
+                </Button>
+              )}
             </div>
           </nav>
         </motion.div>

@@ -34,8 +34,8 @@ const FacultyDetail = () => {
       setIsLoading(true);
       setError("");
       
-      const facultyData = await facultyService.getById(parseInt(id));
-      const universityData = await universityService.getById(facultyData.universityId);
+const facultyData = await facultyService.getById(parseInt(id));
+      const universityData = await universityService.getById(facultyData.university_id);
       const reviewsData = await reviewService.getByTarget(parseInt(id), "faculty");
       
       setFaculty(facultyData);
@@ -117,13 +117,13 @@ const FacultyDetail = () => {
                   </div>
                   
                   <div className="flex items-center gap-2">
-                    {faculty.naqaaeeAccreditation && (
+{faculty.naqaaee_accreditation && (
                       <Badge variant="success">
                         <ApperIcon name="Award" size={16} className="mr-1" />
                         NAQAAEE
                       </Badge>
                     )}
-                    {faculty.hasPostgraduate && (
+                    {faculty.has_postgraduate && (
                       <Badge variant="primary">
                         <ApperIcon name="GraduationCap" size={16} className="mr-1" />
                         Postgraduate
@@ -134,20 +134,20 @@ const FacultyDetail = () => {
                 
                 <div className="flex items-center gap-6 mb-6">
                   <div className="flex items-center gap-2">
-                    <StarRating
-                      rating={faculty.overallRating}
+<StarRating
+                      rating={faculty.overall_rating}
                       readonly
                       size="lg"
                       showValue={false}
                     />
                     <span className="text-3xl font-bold text-gradient">
-                      {faculty.overallRating?.toFixed(1) || "N/A"}
+                      {faculty.overall_rating?.toFixed(1) || "N/A"}
                     </span>
                     <span className="text-gray-500">/10</span>
                   </div>
                   
                   <div className="text-sm text-gray-600">
-                    Based on {faculty.totalReviews || 0} reviews
+                    Based on {faculty.total_reviews || 0} reviews
                   </div>
                 </div>
                 
@@ -157,8 +157,8 @@ const FacultyDetail = () => {
                       <ApperIcon name="DollarSign" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">Annual Fees</p>
-                      <p className="font-semibold">{formatCurrency(faculty.annualFeesEGP)}</p>
+<p className="text-sm text-gray-600">Annual Fees</p>
+                      <p className="font-semibold">{formatCurrency(faculty.annual_fees_egp)}</p>
                     </div>
                   </div>
                   
@@ -167,8 +167,8 @@ const FacultyDetail = () => {
                       <ApperIcon name="TrendingUp" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">Min Grade</p>
-                      <p className="font-semibold">{faculty.acceptanceGrades?.thanaweya}%</p>
+<p className="text-sm text-gray-600">Min Grade</p>
+                      <p className="font-semibold">{faculty.acceptance_grades?.thanaweya}%</p>
                     </div>
                   </div>
                   
@@ -177,8 +177,8 @@ const FacultyDetail = () => {
                       <ApperIcon name="Calendar" size={20} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-sm text-gray-600">Since</p>
-                      <p className="font-semibold">{faculty.yearCommenced}</p>
+<p className="text-sm text-gray-600">Since</p>
+                      <p className="font-semibold">{faculty.year_commenced}</p>
                     </div>
                   </div>
                 </div>
@@ -281,23 +281,23 @@ const FacultyDetail = () => {
                       </Link>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                      <span className="text-gray-600">Year Commenced</span>
-                      <span className="font-semibold">{faculty.yearCommenced}</span>
+<span className="text-gray-600">Year Commenced</span>
+                      <span className="font-semibold">{faculty.year_commenced}</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                      <span className="text-gray-600">Annual Fees</span>
-                      <span className="font-semibold">{formatCurrency(faculty.annualFeesEGP)}</span>
+<span className="text-gray-600">Annual Fees</span>
+                      <span className="font-semibold">{formatCurrency(faculty.annual_fees_egp)}</span>
                     </div>
                     <div className="flex items-center justify-between py-2 border-b border-gray-100">
-                      <span className="text-gray-600">NAQAAEE Accreditation</span>
-                      <span className={`font-semibold ${faculty.naqaaeeAccreditation ? "text-success" : "text-gray-500"}`}>
-                        {faculty.naqaaeeAccreditation ? "Yes" : "No"}
+<span className="text-gray-600">NAQAAEE Accreditation</span>
+                      <span className={`font-semibold ${faculty.naqaaee_accreditation ? "text-success" : "text-gray-500"}`}>
+                        {faculty.naqaaee_accreditation ? "Yes" : "No"}
                       </span>
                     </div>
                     <div className="flex items-center justify-between py-2">
-                      <span className="text-gray-600">Postgraduate Programs</span>
-                      <span className={`font-semibold ${faculty.hasPostgraduate ? "text-success" : "text-gray-500"}`}>
-                        {faculty.hasPostgraduate ? "Available" : "Not Available"}
+<span className="text-gray-600">Postgraduate Programs</span>
+                      <span className={`font-semibold ${faculty.has_postgraduate ? "text-success" : "text-gray-500"}`}>
+                        {faculty.has_postgraduate ? "Available" : "Not Available"}
                       </span>
                     </div>
                   </div>
@@ -349,7 +349,7 @@ const FacultyDetail = () => {
                 />
               )}
               
-              {faculty.hasPostgraduate && (
+{faculty.has_postgraduate && (
                 <div className="mt-8 p-6 bg-gradient-to-r from-accent-50 to-primary-50 rounded-lg border border-accent-200">
                   <div className="flex items-center gap-3 mb-3">
                     <ApperIcon name="GraduationCap" size={24} className="text-accent-600" />
@@ -380,8 +380,8 @@ const FacultyDetail = () => {
                       <div className="text-center">
                         <ApperIcon name="FileText" size={32} className="text-primary-600 mx-auto mb-3" />
                         <h4 className="font-semibold text-gray-900 mb-2">Thanaweya Amma</h4>
-                        <p className="text-3xl font-bold text-primary-600">
-                          {faculty.acceptanceGrades?.thanaweya || "N/A"}%
+<p className="text-3xl font-bold text-primary-600">
+                          {faculty.acceptance_grades?.thanaweya || "N/A"}%
                         </p>
                       </div>
                     </div>
@@ -390,8 +390,8 @@ const FacultyDetail = () => {
                       <div className="text-center">
                         <ApperIcon name="Award" size={32} className="text-secondary-600 mx-auto mb-3" />
                         <h4 className="font-semibold text-gray-900 mb-2">Equivalent Certificates</h4>
-                        <p className="text-3xl font-bold text-secondary-600">
-                          {faculty.acceptanceGrades?.equivalent || "N/A"}%
+<p className="text-3xl font-bold text-secondary-600">
+                          {faculty.acceptance_grades?.equivalent || "N/A"}%
                         </p>
                       </div>
                     </div>
@@ -400,8 +400,8 @@ const FacultyDetail = () => {
                       <div className="text-center">
                         <ApperIcon name="Globe" size={32} className="text-accent-600 mx-auto mb-3" />
                         <h4 className="font-semibold text-gray-900 mb-2">Foreign Students</h4>
-                        <p className="text-3xl font-bold text-accent-600">
-                          {faculty.acceptanceGrades?.foreign || "N/A"}%
+<p className="text-3xl font-bold text-accent-600">
+                          {faculty.acceptance_grades?.foreign || "N/A"}%
                         </p>
                       </div>
                     </div>
@@ -414,8 +414,8 @@ const FacultyDetail = () => {
                     <div className="text-center">
                       <ApperIcon name="DollarSign" size={48} className="text-gray-600 mx-auto mb-4" />
                       <h4 className="text-xl font-semibold text-gray-900 mb-2">Annual Tuition Fees</h4>
-                      <p className="text-4xl font-bold text-gradient">
-                        {formatCurrency(faculty.annualFeesEGP)}
+<p className="text-4xl font-bold text-gradient">
+                        {formatCurrency(faculty.annual_fees_egp)}
                       </p>
                       <p className="text-sm text-gray-600 mt-2">
                         Per academic year
